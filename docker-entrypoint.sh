@@ -24,7 +24,6 @@ if [ "$1" = "nginx" ] || [ "${1#-}" != "$1" ]; then
     # Checking permissions and fixing SGID bit in repos folder
     # More info: https://github.com/jkarlosb/git-server-docker/issues/1
     if [ "$(ls -A /git-server/repos/)" ]; then
-      mkdir /git-server/repos
       cd /git-server/repos
       chown -R git:git .
       chmod -R ug+rwX .
