@@ -16,7 +16,7 @@ ENV CGIT_MAX_REPO_COUNT=50
 
 LABEL version="${VERSION}" \
     description="The hyperfast web frontend for Git repositories on top of Alpine and Nginx." \
-    maintainer="Jose Quintana <joseluisq.net>"
+    maintainer="gpix13"
 
 RUN set -eux \
     && apk add --no-cache \
@@ -84,9 +84,9 @@ CMD [ "nginx", "-g", "daemon off;" ]
 
 
 # Metadata
-LABEL org.opencontainers.image.vendor="Jose Quintana" \
-    org.opencontainers.image.url="https://github.com/joseluisq/alpine-cgit" \
-    org.opencontainers.image.title="cgit" \
+LABEL org.opencontainers.image.vendor="gpix13" \
+    org.opencontainers.image.url="https://github.com/gpix13/docker-cgit" \
+    org.opencontainers.image.title="docker-cgit" \
     org.opencontainers.image.description="The hyperfast web frontend for Git repositories on top of Alpine and Nginx." \
     org.opencontainers.image.version="${VERSION}" \
-    org.opencontainers.image.documentation="https://github.com/joseluisq/alpine-cgit"
+    org.opencontainers.image.documentation="https://github.com/gpix13/docker-cgit"
